@@ -1,0 +1,5 @@
+นายวฤษณิ์ ทับทิม 64050661
+มีปัญหาเรื่องของ Open/closed principle
+	- ใน ImageManager.java ถ้ามีการเพิ่มตัว renderer อย่างอื่นเช่น จอเกม console จออื่น ๆ ที่ต้องมี render อีก ก็ต้องมาเพิ่มเงื่อนไข if ใน file นี้อีก
+	แก้ไขด้วยการใช้ Strategy Design Patterns ในการสร้างตัว Renderer.java แยกออกมา แล้วให้ตัว Renderer ที่เป็น object มาอิงตาม interface นี้ โดยจะเป็นชื่อ method เดียวกัน
+	ถ้าในอนาคต เกิดมีการเพิ่ม object ก็สามารถ add extension เข้ามาได้ โดยที่ไม่ต้องเข้าไปแก้ไข ImageManager.java อีก
