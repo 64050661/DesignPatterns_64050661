@@ -1,2 +1,2 @@
-Design Patterns Subject\
+Design Patterns\
 64050661 นายวฤษณิ์ ทับทิม
